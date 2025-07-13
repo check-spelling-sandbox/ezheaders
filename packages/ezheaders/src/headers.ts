@@ -22,8 +22,8 @@ export function createHeaderHelpers(headers = _headers) {
    * const token = await header('token');
    */
   const header: HeaderFn = async (...args) => {
-    const headerStrore = (await headers());
-    return headerStrore.get(...args);
+    const headerStore = (await headers());
+    return headerStore.get(...args);
   };
 
   /**
